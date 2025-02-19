@@ -1,0 +1,5 @@
+fastapi
+mlflow
+uvicorn
+python-multipart
+boto3

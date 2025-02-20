@@ -2,7 +2,7 @@
  
 ## Docker compose setup
 ```commandline
-docker-compose up --build -d
+docker-compose --env-file sample_env up --build -d
 ```
 Docker Desktop UI:
 ![ui](images/ui.png)
@@ -12,7 +12,7 @@ Docker Desktop UI:
 - Access with [http://localhost:5000](http://localhost:5000)
   ![1](images/1.png)
 
-## Miniio Object Storage
+## Minio Object Storage
 - Access with [http://localhost:9001](http://localhost:9001)
   ![mini](images/mini.png)
 
@@ -24,8 +24,13 @@ Docker Desktop UI:
   ![3](images/3.png)
 
 ## Test Fastapi endpoint
+- [http://localhost:8000/docs](http://localhost:8000/docs) fro OpenAPI docs
+- [http://localhost:8000/predict](http://localhost:8000/predict) for `/predict` endpoint
 - Run `mlflow/notebooks/predict.ipynb` to predict
   ![4](images/4.png)
+
+## Pytest code coverage
+- [http://localhost:7000](http://localhost:7000)
 
 ## Cleanup
 ```commandline

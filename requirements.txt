@@ -1,0 +1,11 @@
+fastapi
+mlflow
+uvicorn
+python-multipart
+boto3
+jupyterlab
+jupyterlab-execute-time
+loguru
+psycopg2-binary
+pytest
+pytest-cov

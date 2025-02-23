@@ -9,7 +9,6 @@ ENV PYTHONPATH="/pytest"
 RUN apt-get update
 RUN apt-get install libpq-dev -y
 RUN pip install -r requirements.txt
-# RUN ls; xxx
 
 RUN pytest -vv tests --cov=mlflow_dir --cov=fastapi_dir --cov-report=html
 WORKDIR htmlcov

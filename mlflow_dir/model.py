@@ -39,7 +39,7 @@ def experiment_run(experiment_name):
     logger.add("mlflow_training.log", rotation="1 MB", level="INFO")
 
     # Set MLflow tracking URI
-    mlflow_uri = os.getenv("MLFLOW_TRACKING_URI", )  # Default if not set
+    mlflow_uri = os.getenv("MLFLOW_TRACKING_URI", )  # Default if not set # talks to mlflow docker
     mlflow.set_tracking_uri(mlflow_uri)
 
     mlflow.set_experiment(experiment_name)
